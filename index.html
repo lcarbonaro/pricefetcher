@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Price Fetcher</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body onload="doAjaxCallForBrands();">
+        
+        <div id="divPrice">
+            
+            <label for="txtBrand">Brand</label>
+            <input id="txtBrand" list="brands" onblur="doAjaxCallForCategories()"/>
+            <datalist id="brands"></datalist>
+        
+            <label for="txtCategory">Category:</label>
+            <input id="txtCategory" list="categories"/>
+            <datalist id="categories"></datalist>
+            
+            <label for="txtSubCategory">Sub-Category:</label>
+            <input id="txtSubCategory" list="subcategories"/>
+            <datalist id="subcategories"></datalist>
+            
+            <label for="txtModel">Model:</label>
+            <input id="txtModel" list="models"/>
+            <datalist id="models"></datalist>
+            
+            <button id="btnFetch">Fetch Price</button>           
+            
+        </div>      
+        
+        <hr/>
+        
+        <div id="divDisplay">
+            
+        </div>
+        
+        <hr/>
+        
+        <div id="divQuote"></div>
+        
+    </body>
+</html>
